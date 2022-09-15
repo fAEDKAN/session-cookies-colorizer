@@ -1,0 +1,24 @@
+<%- include('./partials/head', {title:"ColorizeR"}) %>
+    <% if (locals.bgColor) { %>
+        <%- include('./partials/colorizedBody') %>
+            <% } else { %>
+                <body class="body__index">
+                    <% } %>
+                        <main class="main__container--box">
+                            <div class="container__box">
+                                <div class="title">
+                                    <h1>ColorizeR</h1>
+                                </div>
+                                <div class="body__index__container--form">
+                                    <p class="text__userMessage">
+                                        ¡<%= locals.bgColor.userName %>, gracias por visitarnos!
+                                    </p>
+                                </div>
+                                <div class="button--btn">
+                                    <a class="buttons--btns" href="/">Salir</a>
+                                </div>
+                            </div>
+                        </main>
+                </body>
+
+            </html>

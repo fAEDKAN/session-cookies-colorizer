@@ -1,0 +1,17 @@
+<% if (locals.bgColor.color === "Rojo") { %>
+    <body class="body__index--red">
+    <% } else if (locals.bgColor.color === "Naranja") { %>
+        <body class="body__index--orange">
+        <% } else if (locals.bgColor.color === "Amarillo") { %>
+            <body class="body__index--yellow">
+            <% } else if (locals.bgColor.color === "Verde") { %>
+                <body class="body__index--green">
+                    <% } else if (locals.bgColor.color === "Azul") { %>
+                        <body class="body__index--blue">
+                            <% } else if (locals.bgColor.color === "Índigo") { %>
+                                <body class="body__index--indigo">
+                                    <% } else if (locals.bgColor.color === "Violeta") { %>
+                                        <body class="body__index--violet">
+<% } else { %>
+    <body class="body__index">
+<% } %>

@@ -1,0 +1,177 @@
+/** BODY */
+
+.body__index {
+    width: 100vw;
+}
+
+/** COLORS */
+
+.body__index--red {
+    width: 100vw;
+    background-color: red;
+}
+
+.body__index--orange {
+    width: 100vw;
+    background-color: orange;
+}
+
+.body__index--yellow {
+    width: 100vw;
+    background-color: yellow;
+}
+
+.body__index--green {
+    width: 100vw;
+    background-color: green;
+}
+
+.body__index--blue {
+    width: 100vw;
+    background-color: blue;
+}
+
+.body__index--indigo {
+    width: 100vw;
+    background-color: indigo;
+}
+
+.body__index--violet {
+    width: 100vw;
+    background-color: violet;
+}
+
+
+/** MAIN CONTAINER BOX */
+
+.main__container--box {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__box {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;;
+}
+
+.title {
+    background-color: hotpink;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.title h1 {
+    color: paleturquoise;
+}
+
+.body__index__container--form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+}
+
+.form__index__inputs--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+
+.form__index__inputs--container label {
+    color: deepskyblue;
+    font-size: 1.1rem;
+}
+
+.form__index__inputs--container input {
+    background-color: aquamarine;
+    outline: none;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.20);
+    height: 25px;
+    padding-left: 5px;
+}
+
+.form__index__inputs--container select {
+    background-color: aquamarine;
+    outline: none;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.20);
+    height: 25px;
+    padding-left: 5px;
+}
+
+.form__index__inputs__container--checkbox {
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form__index__inputs__container--checkbox label {
+    color: deepskyblue;
+    font-size: 1.1rem;
+}
+
+.form__index__inputs__container--checkbox input {
+    width: 20px;
+    height: 20px;
+}
+
+.form__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.button--btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: crimson;
+    border: 1px solid black;
+    height: 35px;
+    width: 100%;
+}
+
+.buttons--btns {
+    color: paleturquoise;
+    font-size: 1.2rem;
+    font-weight:bold;
+}
+
+.form__buttons button {
+    background-color: paleturquoise;
+    outline: none;
+    border: 1px solid black;
+    height: 35px;
+    width: 100%;
+    color: crimson;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.text__userMessage {
+    text-align: center;
+    margin: 50px;
+    font-size: 1.25rem;
+    color: deepskyblue;
+    background-color: blanchedalmond;
+}
+
+.errors__message {
+    color: darkred;
+    font-size: 0.75rem;
+    font-weight: bolder;
+    width: 100%;
+}

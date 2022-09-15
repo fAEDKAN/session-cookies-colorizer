@@ -1,0 +1,73 @@
+<%- include('./partials/head', {title:"ColorizeR"}) %>
+    <% if (locals.bgColor) { %>
+        <%- include('./partials/colorizedBody') %>
+            <% } else { %>
+                <body class="body__index">
+                    <% } %>
+                        <main class="main__container--box">
+                            <div class="container__box">
+                                <div class="title">
+                                    <h1>ColorizeR</h1>
+                                </div>
+                                <div class="body__index__container--form">
+                                    <form action="/formValidator" method="POST">
+                                        <div class="form__index__inputs--container">
+                                            <label for="userName">Ingresá tu nombre:</label>
+                                            <input type="text" id="userName" name="userName" value="<%= locals.old && old.userName ? old.userName : null %>"/>
+                                            <p class="errors__message">
+                                                <%= locals.errors && errors.userName ? errors.userName.msg : null %>
+                                            </p>
+                                        </div>
+
+                                        <div class="form__index__inputs--container">
+                                            <label for="color">Elegí un color:</label>
+                                            <select name="color" id="color">
+                                                <option selected hidden value="">
+                                                    Colores...
+                                                </option>
+                                                <% colors.forEach(color=> { %>
+                                                    <option value="<%= color %>">
+                                                        <%= color %>
+                                                    </option>
+                                                    <% }) %>
+                                            </select>
+                                            <p class="errors__message">
+                                                <%= locals.errors && errors.color ? errors.color.msg : null %>
+                                            </p>
+                                        </div>
+
+                                        <div class="form__index__inputs--container">
+                                            <label for="email">Ingresá tu email:</label>
+                                            <input type="email" id="email" name="email" value="<%= locals.old && old.email ? old.email : null %>"/>
+                                            <p class="errors__message">
+                                                <%= locals.errors && errors.email ? errors.email.msg : null %>
+                                            </p>
+                                        </div>
+
+                                        <div class="form__index__inputs--container">
+                                            <label for="age">Ingresá tu edad:</label>
+                                            <input type="number" id="age" name="age" value="<%= locals.old && old.age ? old.age : null %>"/>
+                                            <p class="errors__message">
+                                                <%= locals.errors && errors.age ? errors.age.msg : null %>
+                                            </p>
+                                        </div>
+
+                                        <div class="form__index__inputs__container--checkbox">
+                                            <label for="remember">Recordar color</label>
+                                            <input type="checkbox" name="remember" id="remember"/>
+                                        </div>
+
+                                        <div class="form__buttons">
+                                            <div class="button--btn">
+                                                <a class="buttons--btns" href="/delete" type="reset">Eliminar color</a>
+                                            </div>
+    
+                                            <button type="submit">Enviar</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </main>
+                </body>
+
+            </html>
